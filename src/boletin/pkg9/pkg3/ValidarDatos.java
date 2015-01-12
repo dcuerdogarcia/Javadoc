@@ -6,8 +6,9 @@
 package boletin.pkg9.pkg3;
 
 /**
- *
+ * 
  * @author dcuerdogarcia
+ * @version 1.0
  */
 import javax.swing.JOptionPane;
 
@@ -16,14 +17,20 @@ public class ValidarDatos {
     public ValidarDatos(){
     }
     
+    /**
+     * 
+     * @param valor
+     * @return Área
+     */
     public float ValidarDatos(float valor){
+        
         if(valor>0){
            return valor;
         }else{
-            String dato = JOptionPane.showInputDialog("O valor introducido é incorecto, introduzca un valor corecto");
+            String dato = JOptionPane.showInputDialog("O valor introducido é incorrecto, introduzca un valor correcto");
             float dato1 = Float.parseFloat(dato);
             if(dato1>0){
-                JOptionPane.showMessageDialog(null, "Este valor si é corecto");
+                JOptionPane.showMessageDialog(null, "Este valor si é correcto");
                 return dato1;
             }else{
                 while(dato1<=0){

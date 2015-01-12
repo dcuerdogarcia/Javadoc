@@ -8,6 +8,8 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author dcuerdogarcia
+ * @version 1.0
+ * @param 
  */
 public class Metodos {
    
